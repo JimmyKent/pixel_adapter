@@ -1,33 +1,46 @@
 # pixel_adapter
-遇到ue为了保证双端产生的物理效果一致的问题，可能会为双端配置不同的虚拟像素，因为android和ios的像素密度是不同的。如果遇到这种问题，可以使用以下方式来进行整体适配，这个方案的原理是基于根据平台动态缩放整个页面，这样，在具体页面里使用时，只要写一端的值就可以了，对开发更加友好。
 
-手机基本都是基于宽度为标准，适配高度，因为手机是上下滑动的。
+[![pub package](https://img.shields.io/pub/v/pixel_adapter.svg)](https://pub.dev/packages/pixel_adapter)
 
-一些尺寸原理：
-关注在window.dart里面两个变量：
-// 分辨率比例，iOS的@3X，Android中的2.75(density)，
-devicePixelRatio
-// 物理尺寸 比如iPhone6/7/8Plus 1242 × 2208，红米note5 1080 × 2160
-physicalSize
+Plugin for adapting Android and iOS screen size.
 
-比如有一个橙色的矩形，那么这个矩形在iPhone6Plus上，显示为(600px，30px)的矩形，在红米note5上，显示为(550px，27px)的矩形。
-也就是说，在Flutter的Widget中，我们写的宽高，最后在显示的时候会被系统自动乘上window.devicePixelRatio。 *** 这里很重要，后面会用到。
+## Usage:
+
+### Add dependency：
+
+```yaml
+dependencies:
+  pixel_adapter: ^1.0.0
+```
+
+### Add import:
+
+```dart
+import 'package:pixel_adapter/pixel_adapter.dart';
+```
+
+### init:
+
+```dart
+void main() {
+  PixelAdapter.initWidth(1242);
+}
+```
+### use:	
+```dart
 Container(
-  width: 200,
-  height: 10,
+  width: 100.px,
+  height: 100.px,
   color: Colors.orange,
-),
+)
+```
+原理：  
+​我们动态计算把UE设计稿宽度和每个屏幕的宽度相除取比例，然后把UE设计稿的尺寸动态都乘上这个比例，就得到每个屏幕的适配值。
 
-
-原理：
-我们动态计算把UE设计稿宽度和每个屏幕的宽度相除取比例，然后把UE设计稿的尺寸动态都乘上这个比例，就得到每个屏幕的适配值。
-
-具体实现：
+具体实现：  
 通过扩充num类(int double的父类)，将设计稿标准宽度(如1242)和真实手机屏幕宽度相除，得到缩放比例。使用的时候通过num的扩展函数 .px 算出真实值。
 
-使用Sample：
-
-优缺点：
-1、使用简单、原理简单，初始化就一行。
-2、可以兼容不同设计稿，如果工程有历史原因，有些历史页面或者不同设计师没有按照规范出图，一样可以适配。
-3、使用的时候数字都要加上 .px 后缀，有人可能会感到不适。
+优缺点：  
+1.使用简单、原理简单，初始化就一行。  
+2.可以兼容不同设计稿，如果工程有历史原因，有些历史页面或者不同设计师没有按照规范出图，一样可以适配。  
+3.使用的时候数字都要加上 .px 后缀，有人可能会感到不适。
