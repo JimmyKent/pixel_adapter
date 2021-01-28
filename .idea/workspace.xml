@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="91c73844-3336-4e57-98ab-73f50e6b909f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/analysis_options.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/pixel_adapter.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/pixel_adapter.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -26,8 +28,13 @@
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="dart.settings" />
     <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -47,33 +54,33 @@
       <screen x="0" y="23" width="1680" height="958" />
     </state>
     <state x="300" y="157" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1680.958@0.23.1680.958" timestamp="1611715660099" />
-    <state x="168" y="108" key="DiffContextDialog" timestamp="1611738020675">
+    <state x="168" y="108" key="DiffContextDialog" timestamp="1611796014458">
       <screen x="0" y="23" width="1680" height="958" />
     </state>
-    <state x="168" y="108" key="DiffContextDialog/0.23.1680.958@0.23.1680.958" timestamp="1611738020675" />
-    <state width="1628" height="234" key="GridCell.Tab.0.bottom" timestamp="1611728959422">
+    <state x="168" y="108" key="DiffContextDialog/0.23.1680.958@0.23.1680.958" timestamp="1611796014458" />
+    <state width="1628" height="497" key="GridCell.Tab.0.bottom" timestamp="1611748723421">
       <screen x="0" y="23" width="1680" height="958" />
     </state>
-    <state width="1628" height="234" key="GridCell.Tab.0.bottom/0.23.1680.958@0.23.1680.958" timestamp="1611728959422" />
-    <state width="1628" height="234" key="GridCell.Tab.0.center" timestamp="1611728959422">
+    <state width="1628" height="497" key="GridCell.Tab.0.bottom/0.23.1680.958@0.23.1680.958" timestamp="1611748723421" />
+    <state width="1628" height="497" key="GridCell.Tab.0.center" timestamp="1611748723421">
       <screen x="0" y="23" width="1680" height="958" />
     </state>
-    <state width="1628" height="234" key="GridCell.Tab.0.center/0.23.1680.958@0.23.1680.958" timestamp="1611728959422" />
-    <state width="1628" height="234" key="GridCell.Tab.0.left" timestamp="1611728959421">
+    <state width="1628" height="497" key="GridCell.Tab.0.center/0.23.1680.958@0.23.1680.958" timestamp="1611748723421" />
+    <state width="1628" height="497" key="GridCell.Tab.0.left" timestamp="1611748723420">
       <screen x="0" y="23" width="1680" height="958" />
     </state>
-    <state width="1628" height="234" key="GridCell.Tab.0.left/0.23.1680.958@0.23.1680.958" timestamp="1611728959421" />
-    <state width="1628" height="234" key="GridCell.Tab.0.right" timestamp="1611728959422">
+    <state width="1628" height="497" key="GridCell.Tab.0.left/0.23.1680.958@0.23.1680.958" timestamp="1611748723420" />
+    <state width="1628" height="497" key="GridCell.Tab.0.right" timestamp="1611748723421">
       <screen x="0" y="23" width="1680" height="958" />
     </state>
-    <state width="1628" height="234" key="GridCell.Tab.0.right/0.23.1680.958@0.23.1680.958" timestamp="1611728959422" />
-    <state x="565" y="166" key="RollbackChangesDialog" timestamp="1611741264007">
+    <state width="1628" height="497" key="GridCell.Tab.0.right/0.23.1680.958@0.23.1680.958" timestamp="1611748723421" />
+    <state x="565" y="166" key="RollbackChangesDialog" timestamp="1611796015775">
       <screen x="0" y="23" width="1680" height="958" />
     </state>
-    <state x="565" y="166" key="RollbackChangesDialog/0.23.1680.958@0.23.1680.958" timestamp="1611741264007" />
-    <state x="232" y="53" key="SettingsEditor" timestamp="1611739920387">
+    <state x="565" y="166" key="RollbackChangesDialog/0.23.1680.958@0.23.1680.958" timestamp="1611796015775" />
+    <state x="232" y="53" key="SettingsEditor" timestamp="1611748373651">
       <screen x="0" y="23" width="1680" height="958" />
     </state>
-    <state x="232" y="53" key="SettingsEditor/0.23.1680.958@0.23.1680.958" timestamp="1611739920387" />
+    <state x="232" y="53" key="SettingsEditor/0.23.1680.958@0.23.1680.958" timestamp="1611748373651" />
   </component>
 </project>

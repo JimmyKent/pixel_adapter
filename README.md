@@ -10,7 +10,7 @@ Plugin for adapting Android and iOS screen size.
 
 ```yaml
 dependencies:
-  pixel_adapter: ^1.0.0
+  pixel_adapter: ^1.0.1
 ```
 
 ### Add import:
